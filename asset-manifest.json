@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/jihronnacario/Netflix-Clone-React/static/css/main.895969f5.css",
+    "main.js": "/jihronnacario/Netflix-Clone-React/static/js/main.0f0d8a1e.js",
+    "static/media/footer-bg.jpg": "/jihronnacario/Netflix-Clone-React/static/media/footer-bg.67e95f05e76a8cebf7e2.jpg",
+    "index.html": "/jihronnacario/Netflix-Clone-React/index.html",
+    "main.895969f5.css.map": "/jihronnacario/Netflix-Clone-React/static/css/main.895969f5.css.map",
+    "main.0f0d8a1e.js.map": "/jihronnacario/Netflix-Clone-React/static/js/main.0f0d8a1e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.895969f5.css",
+    "static/js/main.0f0d8a1e.js"
+  ]
+}

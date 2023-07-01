@@ -1,0 +1,68 @@
+@use "../../scss/" as *;
+
+.movie-card {
+    position: relative;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 160%;
+    border-radius: $border-radius;
+    margin-bottom: 1rem;
+
+    .btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 30%;
+        background-color: rgba(255, 0, 0, 0.438);
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: $black;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        border-radius: $border-radius;
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+        &:hover::before {
+            opacity: 0.8;
+        }
+
+        &:hover .btn {
+            transform: translate(-50%, -50%) scale(0.6);
+        }
+
+        .gg-play-button-r {
+            box-sizing: border-box;
+            position: relative;
+            display: block;
+            transform: scale(var(--ggs,1));
+            width: 22px;
+            height: 22px;
+            border: 2px solid;
+            border-radius: 4px
+        }
+        .gg-play-button-r::before {
+            content: "";
+            display: block;
+            box-sizing: border-box;
+            position: absolute;
+            width: 0;
+            height: 10px;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-left: 6px solid;
+            top: 4px;
+            left: 7px
+        }
+    }
+}
